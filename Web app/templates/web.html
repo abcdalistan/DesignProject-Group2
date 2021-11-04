@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*Button */
+.button {
+  background-color: #55B798;
+  color: #efefef;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 20px;
+}
+/*Text */
+    h1 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/*Image */
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+   
+</style>
+<title>Abiotic Stress</title>
+</head>
+<body>
+
+<h1 style="color:#55B798;">Welcome!</h1>
+<div class="image">
+<img src="{{url_for('static', filename='image.png')}}"  />
+</div>
+<div class="center">
+<a href=index>
+
+<button class ="button button1">Continue</button>
+</a>
+</div>
+</body>
+</html>
