@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .menu-bar {
@@ -23,9 +24,9 @@
 }
 
 .btn:hover {
-    color:#ffff;
-    background-color:#55B798;
-    border-color:#ffff;
+    color:#55B798;
+    background-color:#ffff;
+    border-color:#55B798;
 }
 
 .nav-link {
