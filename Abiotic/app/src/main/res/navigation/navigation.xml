@@ -18,5 +18,34 @@
         android:id="@+id/homePage"
         android:name="com.example.abiotic.Home"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homePage_to_projectInformation"
+            app:destination="@id/projectInformation" />
+        <action
+            android:id="@+id/action_homePage_to_monitor"
+            app:destination="@id/monitor" />
+        <action
+            android:id="@+id/action_homePage_to_data"
+            app:destination="@id/data" />
+    </fragment>
+    <fragment
+        android:id="@+id/about"
+        android:name="com.example.abiotic.About"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/projectInformation"
+        android:name="com.example.abiotic.ProjectInformation"
+        android:label="ProjectInformation" />
+    <fragment
+        android:id="@+id/monitor"
+        android:name="com.example.abiotic.Monitor"
+        android:label="fragment_monitor"
+        tools:layout="@layout/fragment_monitor" />
+    <fragment
+        android:id="@+id/data"
+        android:name="com.example.abiotic.Data"
+        android:label="fragment_data"
+        tools:layout="@layout/fragment_data" />
 </navigation>
