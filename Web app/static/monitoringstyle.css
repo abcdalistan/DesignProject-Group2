@@ -12,15 +12,15 @@ body {
   height: 100%;
 }
 
-.info-container .information-image {
+.monitoring-container .monitoring-image {
   margin-right: 0;
   margin-left: auto;
-  padding: 10rem 0;
+  padding: 1rem 0;
   width: 22rem;
 }
 
-.info-container .information-card .row .col .card {
-  margin-top: 70px;
+.monitoring-container .monitoring-card .row .col .card {
+  margin-top: 90px;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: auto;
@@ -34,23 +34,24 @@ body {
   border-radius: 30px;
 }
 
-.info-container .information-card .row .col .card .card-title {
+.monitoring-container .monitoring-card .row .col .card .card-title {
   color: #ffff;
   padding-top: 10px;
   padding-left: 10px;
+  text-align: center;
   font-family: 'Bebas Neue', cursive;
 }
 
-.info-container .information-card .row .col .card .card-body {
+.monitoring-container .monitoring-card .row .col .card .card-body {
   padding-left: 13px;
   padding-top: 0px;
 }
 
-.info-container .information-card .row .col .card .card-body .card-text {
-  padding-top: 0px;
+.monitoring-container .monitoring-card .row .col .card .card-body .list {
   color: #ffff;
-  font-size: 18px;
+  font-size: 22px;
   font-family: 'Roboto', sans-serif;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

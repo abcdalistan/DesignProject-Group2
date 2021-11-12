@@ -10,15 +10,22 @@
 
   {% include 'navbar.html' %}
 
-<h1 style="color:#55B798;">Welcome!</h1>
-<div class="image">
-<img src="{{url_for('static', filename='image.png')}}"  />
-</div>
-<div class="center">
-<a href=index>
-
-<button class ="button button1">Continue</button>
-</a>
-</div>
+<section class = "home" class>
+  <div class = "container">
+    <div class = "row">
+      <div class = "col">
+        <div class = "card">
+          <h1 class = "card-title">DESIGN PROJECT</h1>
+          <div class ="card-body">
+            <p class ="card-text">Design of a Detection and Prevention System for Abiotic Stresses in Plants</p>
+            <a href = information>
+                  <button class="btn button1">GET STARTED</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% endblock %}
