@@ -9,19 +9,21 @@
 body {
   position: fixed;
   width: 100%;
-  height: 100%;
 }
 
 .data-container .data-image {
   margin-right: auto;
   margin-left: auto;
-  padding: 10rem 0;
-  width: 22rem;
+  margin-bottom: 0;
+  padding: 1rem 0;
+  width: 12rem;
 }
 
 .data-container .data-card .row .col .card {
-  margin-top: 70px;
+  margin-top: 0;
   margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #55B798;
   height: 400px;
   width: 700px;
@@ -31,6 +33,8 @@ body {
 
 .data-container .data-card .row .col .card .card-title {
   color: #ffff;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 10px;
   padding-left: 10px;
   font-family: 'Bebas Neue', cursive;
