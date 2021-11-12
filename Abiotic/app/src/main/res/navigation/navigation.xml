@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/welcome"
         android:name="com.example.abiotic.Welcome"
-        android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" >
+        android:label="Abiotic Stress App"
+        tools:layout="@layout/fragment_welcome">
         <action
             android:id="@+id/action_welcome_to_home2"
             app:destination="@id/homePage" />

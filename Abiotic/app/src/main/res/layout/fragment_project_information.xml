@@ -46,7 +46,7 @@
             android:layout_marginBottom="56dp"
             android:fontFamily="sans-serif-medium"
             android:justificationMode="inter_word"
-            android:text="The proposed solution is to design a detection and prevention system that will one, detect plant stress phenotypes such as drought, heat and cold stress, water stress, saline stress, and light stress, two, spray application with the use of hydraulic sprayer and pump, and three, monitor the temperature, salinity, drought, light, and amount of water."
+            android:text="The proposed solution is to design a detection and prevention system that will one, detect plant stress phenotypes such as drought, heat and cold stress, water stress, saline stress, and light stress, two, spray application with the use of hydraulic sprayer and pump, and three, monitor the temperature, salinity, drought, light, and amount of water. The design consists of an enclosure that will contain the plants and the materials necessary to operate the system."
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="@+id/imageView4"
             app:layout_constraintEnd_toEndOf="@+id/imageView4"
