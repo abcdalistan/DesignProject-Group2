@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProjectInformation" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/homeImage"
+            android:layout_width="237dp"
+            android:layout_height="220dp"
+            android:src="@drawable/pic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.119" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="324dp"
+            android:layout_height="329dp"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/rounded_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeImage"
+            app:layout_constraintVertical_bias="0.0"
+            app:tint="#55B798" />
+
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="305dp"
+            android:layout_height="221dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="56dp"
+            android:fontFamily="sans-serif-medium"
+            android:justificationMode="inter_word"
+            android:text="The proposed solution is to design a detection and prevention system that will one, detect plant stress phenotypes such as drought, heat and cold stress, water stress, saline stress, and light stress, two, spray application with the use of hydraulic sprayer and pump, and three, monitor the temperature, salinity, drought, light, and amount of water. The design consists of an enclosure that will contain the plants and the materials necessary to operate the system."
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
