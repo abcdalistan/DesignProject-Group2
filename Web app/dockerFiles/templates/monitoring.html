@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content_css %}
+
+<link  rel="stylesheet" href="static/monitoringstyle.css?version18">
+
+{% endblock %}
+
+{% block content %}
+
+  {% include 'navbar.html' %}
+
+  <section class = "monitoring-container">
+	  <div class = "container">
+		  <div class = "row">
+
+			<div class = "col-lg-6 col-md-12 monitoring-card">
+				<div class = "row">
+					<div class = "col">
+					  <div class = "card">
+						<h1 class = "card-title">PARAMETERS</h1>
+						<div class ="card-body">
+							<div class="list">
+								<label>Temperature: </label>
+							</div>
+							<div class="list">
+								<label>Salinity: </label>
+							</div>
+							<div class="list">
+								<label>Light: </label>
+							</div>
+							<div class="list">
+								<label>Amount of Water: </label>
+							</div>
+							<div class="list">
+								<label>Drought: </label>
+							</div> 
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+
+			<div class = "col-lg-6 col-md-12 monitoring-image">
+				<img src = "./static/Asset-1.png" alt = "logo" class = "img-fluid">
+			</div>
+		  </div>
+	  </div>
+  </section>
+
+
+z{% endblock %}
