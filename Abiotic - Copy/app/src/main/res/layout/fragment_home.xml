@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Home">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/homeImage"
+            android:layout_width="237dp"
+            android:layout_height="220dp"
+            android:src="@drawable/asset_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.119" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="324dp"
+            android:layout_height="329dp"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/rounded_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeImage"
+            app:layout_constraintVertical_bias="0.0"
+            app:tint="#55B798" />
+
+        <Button
+            android:id="@+id/project_btn"
+            android:layout_width="235dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="46dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="164dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Information"
+            app:backgroundTint="#E3B34C"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/data_btn"
+            android:layout_width="235dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="46dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Plant Data"
+            app:backgroundTint="#E3B34C"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.268" />
+
+        <Button
+            android:id="@+id/monitor_btn"
+            android:layout_width="235dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="62dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="62dp"
+            android:layout_marginRight="62dp"
+            android:layout_marginBottom="200dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Monitoring"
+            app:backgroundTint="#E3B34C"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.282" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
