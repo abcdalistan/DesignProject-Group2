@@ -19,7 +19,7 @@ import com.example.abiotic.databinding.FragmentLoginBinding
 
 
 class Login : Fragment() {
-    private lateinit var viewModel: LoginViewModel
+   // private lateinit var viewModel: LoginViewModel
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -31,7 +31,7 @@ class Login : Fragment() {
             container,
             false
         )
-        val application = requireNotNull(this.activity).application
+      /*  val application = requireNotNull(this.activity).application
         val dao = RegisterDatabase.getDatabase(application).registerDAO
         val repository = RegisterRepository(dao)
         val factory = LoginViewModelFactory(repository, application)
@@ -78,7 +78,7 @@ class Login : Fragment() {
       //      view.findNavController().navigate(R.id.action_loginFragment2_to_registerFragment)
        //     Toast.makeText(view.context, "Register! ", Toast.LENGTH_SHORT).show()
       //  }
-
+*/
         return binding.root
     }
    // private fun displayHome() {

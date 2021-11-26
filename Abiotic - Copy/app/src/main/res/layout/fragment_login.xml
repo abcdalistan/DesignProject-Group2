@@ -5,12 +5,12 @@
 
     tools:context=".Login">
 
-    <data>
+    <!--<data>
         <variable
             name="myLoginViewModel"
             type="com.example.abiotic.LoginViewModel" />
     </data>
-
+-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -49,7 +49,6 @@
             android:background="@drawable/rounded_corner"
             android:gravity="center"
             android:text="SIGN IN"
-            android:onClick="@{()->myLoginViewModel.login()}"
             android:textColor="@color/white"
             app:backgroundTint="#E3B34C"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -82,7 +81,7 @@
             android:backgroundTint="@android:color/white"
             android:drawableLeft="@android:drawable/ic_lock_lock"
             android:drawableTint="@color/white"
-            android:text="@={myLoginViewModel.inputUsername}"
+
             android:ems="10"
             android:gravity="left"
             android:hint=" Username"
@@ -102,7 +101,7 @@
             android:backgroundTint="@android:color/white"
             android:drawableLeft="@android:drawable/ic_lock_lock"
             android:drawableTint="@color/white"
-            android:text="@={myLoginViewModel.inputPassword}"
+
             android:ems="10"
             android:gravity="left"
             android:hint=" Password"

@@ -17,7 +17,7 @@ import com.example.abiotic.database.RegisterRepository
 import com.example.abiotic.databinding.FragmentRegisterBinding
 
 class Register : Fragment() {
-    private lateinit var viewModel: RegisterViewModel
+   // private lateinit var viewModel: RegisterViewModel
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,7 +28,7 @@ class Register : Fragment() {
             container,
             false
         )
-        val application = requireNotNull(this.activity).application
+      /*  val application = requireNotNull(this.activity).application
 
         val dao = RegisterDatabase.getDatabase(application).registerDAO
 
@@ -69,7 +69,7 @@ class Register : Fragment() {
        //     view.findNavController().navigate(R.id.action_registerFragment_to_loginFragment22)
 
       //  }
-
+*/
         return binding.root
     }
 

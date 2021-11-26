@@ -4,12 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Register">
 
-    <data>
+    <!--<data>
         <variable
             name="myViewModel"
             type="com.example.abiotic.RegisterViewModel" />
     </data>
-
+-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -45,16 +45,15 @@
             app:layout_constraintVertical_bias="0.047" />
 
         <EditText
-            android:id="@+id/usernameReg"
+            android:id="@+id/firstReg"
             android:layout_width="333dp"
             android:layout_height="49dp"
             android:backgroundTint="@android:color/white"
             android:drawableLeft="@android:drawable/ic_lock_lock"
             android:drawableTint="@color/white"
-            android:text="@={myViewModel.inputUsername}"
             android:ems="10"
             android:gravity="left"
-            android:hint=" Username"
+            android:hint=" First Name"
             android:inputType="textPersonName"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
@@ -65,13 +64,50 @@
             app:layout_constraintVertical_bias="0.172" />
 
         <EditText
+            android:id="@+id/lastReg"
+            android:layout_width="333dp"
+            android:layout_height="49dp"
+            android:backgroundTint="@android:color/white"
+            android:drawableLeft="@android:drawable/ic_lock_lock"
+            android:drawableTint="@color/white"
+            android:ems="10"
+            android:gravity="left"
+            android:hint=" Last Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangular_shape"
+            app:layout_constraintVertical_bias="0.302" />
+
+        <EditText
+            android:id="@+id/usernameReg"
+            android:layout_width="333dp"
+            android:layout_height="49dp"
+            android:backgroundTint="@android:color/white"
+            android:drawableLeft="@android:drawable/ic_lock_lock"
+            android:drawableTint="@color/white"
+            android:ems="10"
+            android:gravity="left"
+            android:hint=" Username"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangular_shape"
+            app:layout_constraintVertical_bias="0.433" />
+
+        <EditText
             android:id="@+id/passwordReg"
             android:layout_width="333dp"
             android:layout_height="49dp"
             android:backgroundTint="@android:color/white"
             android:drawableLeft="@android:drawable/ic_lock_lock"
             android:drawableTint="@color/white"
-            android:text="@={myViewModel.inputPassword}"
             android:ems="10"
             android:gravity="left"
             android:hint=" Password"
@@ -82,7 +118,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/rectangular_shape"
-            app:layout_constraintVertical_bias="0.325" />
+            app:layout_constraintVertical_bias="0.564" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -103,14 +139,13 @@
             android:background="@drawable/rounded_corner"
             android:gravity="center"
             android:text="SIGN UP"
-            android:onClick="@{()->myViewModel.submitButton()}"
             android:textColor="@color/white"
             app:backgroundTint="#E3B34C"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/rectangular_shape"
-            app:layout_constraintVertical_bias="0.529"
+            app:layout_constraintVertical_bias="0.727"
             tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
         <Button
@@ -126,7 +161,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/rectangular_shape"
-            app:layout_constraintVertical_bias="0.724"
+            app:layout_constraintVertical_bias="0.897"
             tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
