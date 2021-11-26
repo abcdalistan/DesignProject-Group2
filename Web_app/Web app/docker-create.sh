@@ -44,7 +44,7 @@ ENV PATH="$PATH:/home/$USERNAME/.local/bin"
 COPY . /home/$USERNAME/$CONTAINER_NAME
 EXPOSE $PORT
 RUN python3 -m pip --disable-pip-version-check --quiet install $PIP_REQUIREMENTS --upgrade pip
-CMD python3 /home/$USERNAME/$CONTAINER_NAME/web_app.py
+CMD python3 /home/$USERNAME/$CONTAINER_NAME/$PYTHON_FILE
 EOF
 cd $DOCKER_FOLDER
 if !(test $(docker ps -aq -f name=$(echo "$CONTAINER_NAME" | tr '[:upper:]' '[:lower:]')))
