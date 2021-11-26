@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.monitoring-container .monitoring-image {
+  margin-right: 0;
+  margin-left: auto;
+  padding: 1rem 0;
+  width: 22rem;
+}
+
+.monitoring-container .monitoring-card .row .col .card {
+  margin-top: 90px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: auto;
+  background-color: #55B798;
+  height: 350px;
+  width: 700px;
+  border: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 30px;
+}
+
+.monitoring-container .monitoring-card .row .col .card .card-title {
+  color: #ffff;
+  padding-top: 10px;
+  padding-left: 10px;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.monitoring-container .monitoring-card .row .col .card .card-body {
+  padding-left: 13px;
+  padding-top: 0px;
+}
+
+.monitoring-container .monitoring-card .row .col .card .card-body .list {
+  color: #ffff;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

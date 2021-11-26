@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  .info-container .information-image {
+    margin-right: 0;
+    margin-left: auto;
+    padding: 10rem 0;
+    width: 22rem;
+  }
+
+  .info-container .information-card .row .col .card {
+    margin-top: 70px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: auto;
+    background-color: #55B798;
+    height: 350px;
+    width: 700px;
+    border: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+  }
+  
+  .info-container .information-card .row .col .card .card-title {
+    color: #ffff;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+  .info-container .information-card .row .col .card .card-body {
+    padding-left: 13px;
+    padding-top: 0px;
+  }
+  
+  .info-container .information-card .row .col .card .card-body .card-text {
+    padding-top: 0px;
+    color: #ffff;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
