@@ -28,7 +28,8 @@
                 <label class= "form-label" for="username">Username</label>
                 <input type="text", 
                         class="form-control", 
-                        id="username">
+                        id="username",
+                        name="username" required>
 
               </div>
 
@@ -36,7 +37,8 @@
                 <label class= "form-label" for="password">Password</label>
                 <input type="password", 
                         class="form-control", 
-                        id="password">
+                        id="password",
+                        name="password" required>
 
               </div>
 
@@ -57,5 +59,8 @@
       </div>
     </div>
   </div>
-
+  <script>
+    if ("{{incorrect}}" == "True") { alert("Username or password is incorrect!"); }
+    else if ("{{success}}" == "True") { alert("Welcome, {{fname}}!"); }
+  </script>
 {% endblock %}

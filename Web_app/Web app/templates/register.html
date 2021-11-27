@@ -24,7 +24,8 @@
                     <label class= "form-label" for="fname">First name</label>
                     <input type="text", 
                             class="form-control", 
-                            id="fname">
+                            id="fname",
+                            name = "fname" required>
     
                 </div>
 
@@ -32,7 +33,8 @@
                     <label class= "form-label" for="lname">Last name</label>
                     <input type="text", 
                             class="form-control", 
-                            id="lname">
+                            id="lname",
+                            name="lname" required>
     
                   </div>
                 
@@ -40,7 +42,8 @@
                 <label class= "form-label" for="username">Username</label>
                 <input type="text", 
                         class="form-control", 
-                        id="username">
+                        id="username",
+                        name="username" required>
 
               </div>
 
@@ -48,12 +51,13 @@
                 <label class= "form-label" for="password">Password</label>
                 <input type="password", 
                         class="form-control", 
-                        id="password">
+                        id="password",
+                        name="password" required>
 
               </div>
 
               <div class="form-group mb-3 text-lg-center">
-                <input class="btn" type="submit" value="Register">
+                <input class="btn" type="submit" value="Register" required>
               </div>
 
               <div class="form-group text-lg-center">
@@ -71,5 +75,8 @@
 
     </div>
   </div>
-
+  <script>
+        if ("{{userExists}}" == "True") { alert("User already exists!"); }
+        else if ("{{success}}" == "True") { alert("{{fname}}, you have successfully registered!"); }
+  </script>
 {% endblock %}

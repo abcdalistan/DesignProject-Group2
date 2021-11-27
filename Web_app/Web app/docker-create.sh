@@ -5,7 +5,7 @@ USERNAME="pdUser"
 CONTAINER_NAME="pd"
 PYTHON_FILE="web_app.py"
 DOCKER_FOLDER="dockerFiles"
-PIP_REQUIREMENTS="flask"
+PIP_REQUIREMENTS="flask flask-pymongo pymongo[srv]"
 cat << EOF
 Docker - Design Project
 © Dalistan, de los Santos, Mascarenas, Regulacion

@@ -39,5 +39,8 @@
 		  </div>
 	  </div>
   </section>
-
+  <script>
+    if ("{{incorrect}}" == "True") { alert("Username or password is incorrect!"); }
+    else if ("{{success}}" == "True") { alert("Welcome, {{fname}}!"); }
+  </script>
 {% endblock %}
