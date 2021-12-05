@@ -35,8 +35,10 @@ def about():
 
 @app.route("/information")
 def information():
-    return render_template("info.html",success=request.args['success'],fname=request.args['fname'])
-
+    try:
+        return render_template("info.html",success=request.args['success'],fname=request.args['fname'])
+    except:
+        return render_template("info.html")
 @app.route("/monitoring")
 def monitoring():
     return render_template("monitoring.html")
